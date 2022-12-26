@@ -36,9 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
         img = header.querySelector("img"),
         alt = img.alt;
 
-      if (levenshtein(searchString, alt.slice(0, searchString.length)) > 2) {
-        article.style.display = "none";
+      if (
+        searchString.length > 0 &&
+        levenshtein(
+          searchString.toLowerCase(),
+          alt.toLowerCase().slice(0, searchString.length - 1)
+        ) > 3
+      ) {
+        article.style.opacity = "0%";
+        function nullArt() {
+          article.style.display = "none";
+          article.removeEventListener("transitionend", nullArt);
+        }
+        article.addEventListener("transitionend", nullArt);
       } else {
+        article.style.opacity = "100%";
         article.style.display = "inline-block";
       }
     }
