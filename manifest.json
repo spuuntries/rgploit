@@ -1,5 +1,6 @@
 {
   "manifest_version": 3,
+  "permissions": ["scripting", "activeTab"],
   "name": "RGPloit",
   "description": "Extension to help with your freebie-student endeavours.",
   "version": "1.0",

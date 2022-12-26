@@ -22,11 +22,12 @@
   <body>
     <style>
       body {
-        min-width: 300px;
+        min-width: 350px;
         padding: 5vh;
       }
       h1 {
         font-family: "Unbounded", cursive;
+        font-size: 10vw;
         margin: 0.5em;
         margin-top: 0;
       }
@@ -39,22 +40,62 @@
       button {
         font-family: "Unbounded", cursive;
         text-align: left;
+        font-size: clamp(3vw, 4vw, 5vw);
         border-radius: 0.5em;
       }
       p {
         font-family: "Josefin Sans", sans-serif;
-        font-size: medium;
+        font-size: clamp(3vw, 5vw, 5vw);
       }
       article {
         border: white 0.1vw solid;
-        box-shadow: 0px 0px 2vw white;
+        box-shadow: 0px 0px 1.5vw white;
+        display: inline-block;
+        transition: opacity 0.5s cubic-bezier(0.1, 0.7, 0.1, 1);
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .sect-head {
+        font-family: "Unbounded", cursive;
+        font-size: 4vw;
+      }
+      #top-head {
+        display: block;
+      }
+      #tool-scroll {
+        max-height: 40vh;
+        overflow-y: scroll;
+        padding: 4vw;
+
+        /* border: 0.1vw whitesmoke solid; */
+        border-radius: 2em;
+
+        scrollbar-color: #d3d3d3 transparent;
+        scrollbar-width: thin;
+      }
+      #tool-scroll::-webkit-scrollbar {
+        width: 8px;
+      }
+      #tool-scroll::-webkit-scrollbar-thumb {
+        background-color: #d3d3d3;
+        border: 2px solid transparent;
+        border-radius: 10px;
+      }
+      #tool-scroll::-webkit-scrollbar-track {
+        background-color: transparent;
       }
     </style>
     <article>
-      <header>
+      <header id="top-head">
         <h1>RGPloit</h1>
         <p>
-          You wanna use cool "educational" services, but you're cheap as fuck?
+          Wanna use cool "educational" services, but you're cheap as f<span
+            style="filter: blur(3px)"
+            >uck</span
+          >?
           <br />
           <b> Choose one of the thingies below.</b> <br /><br />
           Want to add a feature? <br />Contribute
@@ -62,14 +103,50 @@
           >.
         </p>
       </header>
-      <article>
-        <header><img src="rg.webp" alt="roboguru icon" /></header>
-        <p>
-          If you're on a locked answer page, you can press the button below to
-          "unlock" it.
-        </p>
-        <button id="roboguru">Free da answer</button>
-      </article>
+      <div style="overflow: hidden">
+        <input id="search-bar" type="text" placeholder="Search Here..." />
+        <div id="tool-scroll">
+          <div>
+            <article>
+              <header>
+                <img src="image1.jpg" alt="Lorem ipsum dolor sit amet" />
+              </header>
+            </article>
+            <article>
+              <header>
+                <img src="image2.jpg" alt="Consectetur adipiscing elit" />
+              </header>
+            </article>
+            <article>
+              <header>
+                <img src="image3.jpg" alt="Sed do eiusmod tempor incididunt" />
+              </header>
+            </article>
+            <article>
+              <header><img src="rg.webp" alt="roboguru icon" /></header>
+              <p>
+                If you're on a locked answer page, you can press the button
+                below to "unlock" it.
+              </p>
+              <button id="roboguru">I NEED FREE ANSWERS</button>
+            </article>
+            <article>
+              <header>
+                <img
+                  src="feature4.svg"
+                  alt="zenbot icon"
+                  style="max-height: 10vw; width: auto; height: auto"
+                />
+                <p class="sect-head">ZENIUS ZENBOT</p>
+              </header>
+              <p>
+                If the page is asking you to sign up/log in, click the button.
+              </p>
+              <button id="zenius">NO MORE STOOPID ACCOUNTS</button>
+            </article>
+          </div>
+        </div>
+      </div>
     </article>
   </body>
 </html>
