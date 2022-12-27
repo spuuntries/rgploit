@@ -3,9 +3,16 @@
   "permissions": ["scripting", "activeTab"],
   "name": "RGPloit",
   "description": "Extension to help with your freebie-student endeavours.",
-  "version": "1.0",
+  "version": "1.0.0",
+  "version_name": "1.0.0-rev1",
   "action": {
     "default_popup": "index.html",
-    "default_icon": "RGPloit.svg"
+    "default_icon": "rgdonut.png"
+  },
+  "icons": {
+    "16": "rgdonut.png",
+    "32": "rgdonut.png",
+    "48": "rgdonut.png",
+    "128": "rgdonut.png"
   }
 }

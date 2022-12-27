@@ -39,6 +39,15 @@ A Google Chrome[^2] extension to "regain" access to these resources.
 
 ----
 
+## **How to use** 🔧
+1. Grab a release from [**here**](https://github.com/spuuntries/rgploit/releases) and install it. (Preferably the latest one, but you do you ig 🙃)
+2. (Technically optional) [**Pin**](https://www.wikihow.com/Pin-Extensions-in-Chrome) the extension.
+3. Click the <img src="./rgdonut.png" style="width:2em;" alt="RGPloit icon"/> ("gray donut looking thingy") icon.
+4. Choose the utility you want to use, click the button for that utility.
+5. Done!
+
+----
+
 ## **Contributing?** 🤔  
 
 We *welcome* contributions! 🤗  
