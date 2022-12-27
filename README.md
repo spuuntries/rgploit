@@ -1,16 +1,14 @@
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Unbounded:wght@900&display=swap" rel="stylesheet">
-
 <!-- ICON -->
-<p style='font-family: "Unbounded", cursive;text-align: center;font-size: max(35px, 10vw);transition: font-size 0.5s ease-out;margin-bottom:0;'>RGPloit</p>
+<h1 align="center">
+<img src="./rgdonut.png" style="width:20vw;" alt="RGPloit icon"/>
+<img src="./RGPloit.svg" style="width:85vw;" alt="RGPloit"/>
+</h1>
 <!-- ICON -->
 
 <!-- SLOGAN -->
-<p style="text-align:center;margin-bottom:2em;font-size: max(15px, 3vw);transition: font-size 0.5s ease-out;font-family:'Playfair Display', serif;">Nihil est tam utile quam scientia.</p>
+<p align="center"><img src="./nihil.svg" style="width:50vw" alt="Nihil est tam utile quam scientia."></p>
+<br />
 <!-- SLOGAN -->
-
-<!-- BADGES -->
 
 ![Used by cheapskates](https://img.shields.io/static/v1?label=used%20by%20&message=cheapskates&color=pink&labelColor=lightgrey&style=for-the-badge) 
 ![Who says no to free shit](https://img.shields.io/static/v1?label=who%20says%20no&message=to%20free%20shit&labelColor=thistle&color=mediumpurple&style=for-the-badge) 
@@ -22,7 +20,7 @@
 ## **Democratizing Knowledge: A tool for cheapskates to access "educational" materials.**
 
  > Are you ***Indonesian***?[^1]  
- > And you're *frustrated* by the "restrictions" imposed by educational services in the likes of <!-- Ruang*uru --> <span style="filter:blur(1px)">Ruangg\*ru</span> and <!-- Ze*ius --> <span style="filter:blur(1px)">Z\*nius</span>?  
+ > And you're *frustrated* by the "restrictions" imposed by educational services in the likes of Ruangg\*ru and Z\*nius?  
 
 ### Introducing, the "new" way to ~~cheat~~ *"ease"* the system, **RGPloit**.
 A Google Chrome[^2] extension to "regain" access to these resources.
@@ -49,7 +47,8 @@ If you want to contribute, just write a PR on this repo and I'll take a look!
 ----
 
 <!-- CLOSING SLOGAN -->
-<p style="text-align:center;margin-bottom:0;font-size: max(20px, 5vw);transition: font-size 0.5s ease-out;font-family:'Playfair Display', serif;">Disce ut semper victurus.</p>
+<br />
+<p align="center"><img src="./semper.svg" style="width: 55vw;"/></p>
 <!-- CLOSING SLOGAN -->
 
 [^1]: For now we're `indonesian-services-only`, but if you're interested in getting support for a specific platform, it must have its solutions be hidden within the HTML.  
